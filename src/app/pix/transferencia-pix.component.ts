@@ -1,25 +1,18 @@
-import { Transferencia } from './../services/models/transferencia.model';
+import { NovaTransferenciaComponent } from './../nova-transferencia/nova-transferencia.component';
 import { TransferenciaService } from './../services/transferencia.service';
-import { HttpClient } from '@angular/common/http';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { ExtratoComponent } from './../extrato/extrato.component';
+import { Transferencia } from './../services/models/transferencia.model';
 import { Router } from '@angular/router';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 @Component({
-  selector: 'app-nova-transferencia',
-  templateUrl: './nova-transferencia.component.html',
-  styleUrls: ['./nova-transferencia.component.scss'],
+  selector: 'app-transferencia-pix',
+  templateUrl: './transferencia-pix.component.html',
+  styleUrls: ['./transferencia-pix.component.scss'],
 })
-export class NovaTransferenciaComponent {
+export class TransferenciaPix extends NovaTransferenciaComponent {
+  @Output() aoFazerPix = new EventEmitter<any>();
 
-  @Output() aoTransferir = new EventEmitter<any>();
-
-  valor: number;
-  destino: number;
-  origem : number;
-
-  constructor(protected service: TransferenciaService,protected router:Router){
-
-
-  }
 
   transferir() {
     console.log('Solicitada nova transferência');
@@ -45,6 +38,11 @@ export class NovaTransferenciaComponent {
   limparCampos(){
     this.valor = 0;
     this.destino = 0;
-    this.origem =0;
+    this.origem = 0;
   }
+
+
+
+  
+
 }

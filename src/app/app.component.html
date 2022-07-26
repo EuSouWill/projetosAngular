@@ -1,6 +1,28 @@
-<app-nova-transferencia
- (aoTransferir)="transferir($event)"
-></app-nova-transferencia>
+<header>
+  <a routerLink="extrato/">Extrato</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
+  <a routerLink="transferencia-pix" routerLinkActive="ativo">Pix</a>
+  <a routerLink="cartao-credito" routerLinkActive="ativo">Cartão de Crédito</a>
 
-<app-extrato ></app-extrato>
 
+
+
+</header>
+<main>
+  <router-outlet></router-outlet>
+
+  <body>
+
+
+<ul >
+    <li><a href="extrato">Extrato</a></li>
+    <li><a href="nova-transferencia/">Nova Transferência</a></li>
+    <li><a href="transferencia-pix">Pix</a></li>
+
+</ul>
+
+
+
+  </body>
+
+</main>
