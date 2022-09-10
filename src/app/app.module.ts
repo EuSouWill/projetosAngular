@@ -10,6 +10,7 @@ import { ExtratoComponent } from './extrato/extrato.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { HttpClientModule } from '@angular/common/http';
+import { CartaoDeCreditoComponent } from './cartao-de-credito/cartao-de-credito.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -18,7 +19,8 @@ registerLocaleData(localePt, 'pt');
     AppComponent,
    NovaTransferenciaComponent,
    ExtratoComponent,
-   TransferenciaPix
+   TransferenciaPix,
+   CartaoDeCreditoComponent
   ],
   imports: [
     BrowserModule,
