@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { HttpClientModule } from '@angular/common/http';
 import { CartaoDeCreditoComponent } from './cartao-de-credito/cartao-de-credito.component';
+import { SaldoComponent } from './saldo/saldo.component';
 
 registerLocaleData(localePt, 'pt');
 
@@ -20,7 +21,8 @@ registerLocaleData(localePt, 'pt');
    NovaTransferenciaComponent,
    ExtratoComponent,
    TransferenciaPix,
-   CartaoDeCreditoComponent
+   CartaoDeCreditoComponent,
+   SaldoComponent
   ],
   imports: [
     BrowserModule,

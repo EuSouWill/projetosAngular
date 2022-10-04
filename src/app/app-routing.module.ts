@@ -1,3 +1,4 @@
+import { SaldoComponent } from './saldo/saldo.component';
 import { CartaoDeCreditoComponent } from './cartao-de-credito/cartao-de-credito.component';
 import { TransferenciaPix } from './pix/transferencia-pix.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
@@ -12,7 +13,8 @@ export const routes: Routes = [
   {path: 'extrato', component: ExtratoComponent},
   {path: 'nova-transferencia', component: NovaTransferenciaComponent},
   {path: 'transferencia-pix', component: TransferenciaPix},
-  {path:'cartao-de-credito', component: CartaoDeCreditoComponent}
+  {path:'cartao-de-credito', component: CartaoDeCreditoComponent},
+  { path: 'saldo', component: SaldoComponent}
 
 ];
 
