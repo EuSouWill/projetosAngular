@@ -1,0 +1,31 @@
+<header>
+  <a routerLink="extrato/">Extrato</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
+  <a routerLink="transferencia-pix" routerLinkActive="ativo">Pix</a>
+  <a routerLink="cartao-de-credito" routerLinkActive="ativo">Cartão de Crédito</a>
+  <a routerLink="saldo" routerLinkActive="ativo">Saldo</a>
+
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+<footer>
+  <div class="container body-content">
+
+    <footer class="fixarRodape">
+
+        <p>&copy; Banco Digital willBank 2022</p>
+    </footer>
+  </div>
+  <style>
+      .fixarRodape {
+          bottom: 0;
+          position: fixed;
+          width: 110%;
+          text-align: center;
+
+
+      }
+  </style>
+</footer>
+</main>
