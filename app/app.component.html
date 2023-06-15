@@ -1,3 +1,6 @@
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <head>
   <script>
 
@@ -5,56 +8,46 @@
 </head>
 <header>
   <input type="checkbox" id="chec" />
-        <label for="chec">
-          <img src="/src/imagens/menu2.jpg"  alt="">
-
-        </label>
-        <nav>
-          <ul>
-            <li>
-              <a routerLink="cartao-de-credito" routerLinkActive="ativo">Cartão de Crédito</a>
-            </li>
-            <li>
-              <a routerLink="saldo" routerLinkActive="ativo">Saldo</a>
-            </li>
-            <li>
-              <a routerLink="transferencia-pix" routerLinkActive="ativo">Pix</a>
-            </li>
-            <li>
-              <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
-            </li>
-            <li>
-              <a routerLink="extrato/">Extrato</a>
-            </li>
-          </ul>
-        </nav>
-
-
-
-
-
-
+  <label for="chec"></label>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="cartao-de-credito" routerLinkActive="ativo">Cartão de Crédito</a>
+      </li>
+      <li>
+        <a routerLink="saldo" routerLinkActive="ativo">Saldo</a>
+      </li>
+      <li>
+        <a routerLink="transferencia-pix" routerLinkActive="ativo">Pix</a>
+      </li>
+      <li>
+        <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
+      </li>
+      <li>
+        <a routerLink="extrato/">Extrato</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main>
   <router-outlet></router-outlet>
-<footer>
-  <div class="container body-content">
-
-    <footer class="fixarRodape">
-
-        <p>&copy; Banco Digital willBank 2022</p>
-    </footer>
-  </div>
+  <footer>
+    <div class="container body-content">
+      <footer class="fixarRodape">
+        <p>&copy; Banco Digital willBank 2022 <i class="fa-solid fa-check"></i></p>
+      </footer>
+    </div>
+  </footer>
   <style>
-      .fixarRodape {
-          bottom: 0;
-          position: fixed;
-          width: 110%;
-          text-align: center;
-
-
-      }
+    .fixarRodape {
+      bottom: 0;
+      position: fixed;
+      width: 110%;
+      text-align: center;
+    }
   </style>
-</footer>
 </main>
+
+
+

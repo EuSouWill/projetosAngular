@@ -11,13 +11,13 @@ header {
 
 
   :hover {
-    background-color: #6eb1f4;
+    background-color: transparent;
     text-decoration: none;
-    color: #ffffff;
+    color: #050505;
     border-block-start: #5ba4ec;
   }
   a:hover{
-    background-color: rgb(106, 169, 228);
+    background-color:#cfcbcb;
     color: black;
 
 
@@ -75,7 +75,7 @@ input[type="checkbox"]{
 }
 
 nav{
-  background-color: rgb(18, 9, 57);
+  background-color: transparent;
   width: 150px;
   height: 100%;
   left: -350px;
@@ -98,16 +98,27 @@ aside{
   margin-left: 15px;
   margin-right: 0px;
   margin-bottom: 15px;
-
   float: right;
 }
-label{
+label {
 
   padding: 15px;
   position: absolute;
   z-index: 1;
-      background-color: rgb(161, 17, 17);
+  color: #0a0909;
+  background-color: transparent;
+  display: inline-block;
+  cursor:pointer;
 
+}
+
+label::before {
+  content: '\f0c9' ;   /* Código do ícone de hambúrguer do FontAwesome */
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #0a0909;
 
 }
 a{
@@ -115,7 +126,7 @@ a{
   font-size: 18px;
  display: block;
  padding: 20px 20px;
- color: rgb(224, 208, 208);
+ color: black;
 }
 footer{
   border-top: 1px solid #333;
@@ -123,7 +134,7 @@ footer{
   text-align: center;
   color: azure;
   bottom: 0;
-  
+
   height: 9px;
   position: fixed;
   width: 100%;
