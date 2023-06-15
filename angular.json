@@ -3,11 +3,15 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+
     "bytebank": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+
+
+
         }
       },
       "root": "",
@@ -28,7 +32,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
